@@ -16,14 +16,14 @@ const bodyParser = require('body-parser');
 app.use(bodyParser.json());
 
 //lancement du serveur
-const hostname = '192.168.1.9';
+const hostname = '127.0.0.1';
 const port = process.env.PORT || 9000;
 const server = http.createServer(app);
 console.log('server runing');
 server.listen(port, hostname);
 
 app.use((req, res, next) => {
-    res.setHeader('Access-Control-Allow-Origin', 'http://localhost:8100');
+    res.setHeader('Access-Control-Allow-Origin', '*');
     res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS, PUT, PATCH, DELETE');
     res.setHeader('Access-Control-Allow-Headers', 'X-Requested-With,content-type')
     res.setHeader('Access-Control-Allow-Credentials', true);
