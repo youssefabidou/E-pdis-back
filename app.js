@@ -16,11 +16,12 @@ const bodyParser = require('body-parser');
 app.use(bodyParser.json());
 
 //lancement du serveur
-const hostname = '127.0.0.1';
+const hostname = '0.0.0.0';
 const port = process.env.PORT || 9000;
 const server = http.createServer(app);
 console.log('server runing');
 server.listen(port, hostname);
+
 
 app.use((req, res, next) => {
     res.setHeader('Access-Control-Allow-Origin', '*');
