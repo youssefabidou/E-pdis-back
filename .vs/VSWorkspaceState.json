@@ -1,0 +1,13 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\.idea",
+    "\\bin",
+    "\\controllers",
+    "\\core",
+    "\\routes",
+    "\\views"
+  ],
+  "SelectedNode": "\\routes\\product.js",
+  "PreviewInSolutionExplorer": false
+}
