@@ -16,7 +16,7 @@ const bodyParser = require('body-parser');
 app.use(bodyParser.json());
 
 //lancement du serveur
-const hostname = '0.0.0.0';
+const hostname = 'localhost';
 const port = process.env.PORT || 9000;
 const server = http.createServer(app);
 console.log('server runing');
